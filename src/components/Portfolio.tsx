@@ -2,7 +2,7 @@ function Portfolio() {
     return (
         <>
             <h1>Portfolio</h1>
-            <p>This is where my Portfolio info goes</p>
+            <p>Here are some of the projects I have worked on in the past</p>
         </>
     )
 }
