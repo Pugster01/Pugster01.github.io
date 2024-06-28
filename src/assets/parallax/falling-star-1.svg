@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 427.43 429.76">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+        mix-blend-mode: multiply;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        filter: url(#luminosity-noclip);
+      }
+
+      .cls-4 {
+        mask: url(#mask-1);
+      }
+
+      .cls-5 {
+        mask: url(#mask);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-2);
+        opacity: .8;
+      }
+    </style>
+    <filter id="luminosity-noclip" x="0" y="0" width="427.43" height="429.76" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <filter id="luminosity-noclip-2" x="0" y="-9520.9" width="427.43" height="32766" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-1" x="0" y="-9520.9" width="427.43" height="32766" maskUnits="userSpaceOnUse"/>
+    <linearGradient id="linear-gradient" x1="454.11" y1="449.92" x2="-23.86" y2="-3.1" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#000"/>
+    </linearGradient>
+    <mask id="mask" x="0" y="0" width="427.43" height="429.76" maskUnits="userSpaceOnUse">
+      <g class="cls-3">
+        <g class="cls-4">
+          <path class="cls-1" d="M0,0l400.66,418.72.03-.03c.22.22.39.45.61.67,9.1,9.1,20,12.95,24.33,8.62,4.36-4.35.5-15.24-8.6-24.35L0,0Z"/>
+        </g>
+      </g>
+    </mask>
+    <linearGradient id="linear-gradient-2" x1="454.11" y1="449.92" x2="-23.86" y2="-3.1" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#2e2e4f"/>
+    </linearGradient>
+  </defs>
+  <g id="Vrstva_1" data-name="Vrstva 1">
+    <g class="cls-5">
+      <path class="cls-2" d="M0,0l400.66,418.72.03-.03c.22.22.39.45.61.67,9.1,9.1,20,12.95,24.33,8.62,4.36-4.35.5-15.24-8.6-24.35L0,0Z"/>
+    </g>
+  </g>
+</svg>

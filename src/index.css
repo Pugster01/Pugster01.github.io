@@ -9,10 +9,90 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
+  background-color: white;
   background-color: #11112b;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.parallax {
+  height: 100%;
+  min-width: 1000px;
+}
+
+.parallax>img {
+  position: absolute;
+}
+
+.title-and-name {
+  z-index: 6;
+}
+
+#svg-ground-1 {
+  bottom: 0;
+
+  z-index: 7;
+}
+
+#svg-ground-2 {
+  bottom: 3vw;
+
+  z-index: 6;
+}
+
+#svg-ground-3 {
+  bottom: 15vw;
+
+  z-index: 5;
+}
+
+#svg-mountains-1 {
+  bottom: 12vw;
+
+  z-index: 4;
+}
+
+#svg-mountains-2 {
+  bottom: 5vw;
+
+  z-index: 3;
+}
+
+#svg-stars {
+  top: 0;
+
+  z-index: 2;
+}
+
+#svg-falling-star-1 {
+  z-index: 2;
+}
+
+#svg-falling-star-2 {
+  z-index: 2;
+}
+
+@media screen and (max-width: 1000px) {
+  #svg-ground-1 {
+    bottom: 0;
+  }
+  
+  #svg-ground-2 {
+    bottom: 25px;
+  }
+  
+  #svg-ground-3 {
+    bottom: 150px;
+  }
+  
+  #svg-mountains-1 {
+    bottom: 120px;
+  }
+  
+  #svg-mountains-2 {
+    bottom: 50px;
+  }
 }

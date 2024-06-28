@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 294.7 210.51">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient-2);
+        opacity: .4;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+        mix-blend-mode: multiply;
+      }
+
+      .cls-3 {
+        filter: url(#luminosity-noclip);
+      }
+
+      .cls-4 {
+        mask: url(#mask-1);
+      }
+
+      .cls-5 {
+        mask: url(#mask);
+      }
+    </style>
+    <filter id="luminosity-noclip" x="0" y="0" width="294.7" height="210.51" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <filter id="luminosity-noclip-2" x="0" y="-9514.1" width="294.7" height="32766" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="SourceGraphic" in2="bg"/>
+    </filter>
+    <mask id="mask-1" x="0" y="-9514.1" width="294.7" height="32766" maskUnits="userSpaceOnUse"/>
+    <linearGradient id="linear-gradient" x1="1214.34" y1="2819.2" x2="928.73" y2="2548.49" gradientTransform="translate(2965.29 -511.14) rotate(99.46)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#000"/>
+    </linearGradient>
+    <mask id="mask" x="0" y="0" width="294.7" height="210.51" maskUnits="userSpaceOnUse">
+      <g class="cls-3">
+        <g class="cls-4">
+          <path class="cls-2" d="M294.7,0L8.55,195.06v.02c-.14.1-.29.19-.44.3-6.26,4.47-9.6,10.51-7.47,13.49,2.13,3,8.94,1.8,15.19-2.68L294.7,0Z"/>
+        </g>
+      </g>
+    </mask>
+    <linearGradient id="linear-gradient-2" x1="1214.34" y1="2819.2" x2="928.73" y2="2548.49" gradientTransform="translate(2965.29 -511.14) rotate(99.46)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#2e2e4f"/>
+    </linearGradient>
+  </defs>
+  <g id="Vrstva_1" data-name="Vrstva 1">
+    <g class="cls-5">
+      <path class="cls-1" d="M294.7,0L8.55,195.06v.02c-.14.1-.29.19-.44.3-6.26,4.47-9.6,10.51-7.47,13.49,2.13,3,8.94,1.8,15.19-2.68L294.7,0Z"/>
+    </g>
+  </g>
+</svg>
