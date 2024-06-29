@@ -21,9 +21,15 @@
 .parallax {
   height: 100%;
   min-width: 1000px;
+  /* overflow: hidden; */
 }
 
-.parallax>img {
+.parallax > * {
+  animation: parallax linear;
+  animation-timeline: scroll();
+}
+
+.parallax > img {
   position: absolute;
 }
 
@@ -39,31 +45,34 @@
 
 #svg-ground-2 {
   bottom: 3vw;
-
   z-index: 6;
+  --parallax-speed: 40;
 }
 
 #svg-ground-3 {
   bottom: 15vw;
+  --parallax-speed: 50;
 
   z-index: 5;
 }
 
 #svg-mountains-1 {
   bottom: 12vw;
+  --parallax-speed: 90;
 
   z-index: 4;
 }
 
 #svg-mountains-2 {
   bottom: 5vw;
+  --parallax-speed: 100;
 
   z-index: 3;
 }
 
 #svg-stars {
   top: 0;
-
+  --parallax-speed: 120;
   z-index: 2;
 }
 
@@ -94,5 +103,11 @@
   
   #svg-mountains-2 {
     bottom: 50px;
+  }
+}
+
+@keyframes parallax {
+  to {
+    transform: translateY(calc(var(--parallax-speed) * 1vh));
   }
 }

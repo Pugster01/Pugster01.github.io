@@ -13,8 +13,8 @@ function Hero() {
 					<img id="svg-mountains-1" src="src/assets/parallax/mountains-1.svg"></img>
 					<img id="svg-mountains-2" src="src/assets/parallax/mountains-2.svg"></img>
 					<img id="svg-stars" src="src/assets/parallax/stars.svg"></img>
-					{/* These will be used in a latter implementation
-					 <img id="svg-falling-star-1" src="src/assets/parallax/falling-star-1.svg"></img>
+					{/* These will be used in a latter implementation */}
+					{/* <img id="svg-falling-star-1" src="src/assets/parallax/falling-star-1.svg"></img>
 					<img id="svg-falling-star-2" src="src/assets/parallax/falling-star-2.svg"></img> */}
 				</div>
 			</div>
