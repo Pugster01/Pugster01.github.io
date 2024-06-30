@@ -9,9 +9,13 @@ function App() {
   return (
     <>
       <Hero></Hero>
-      <Experience></Experience>
-      <Portfolio></Portfolio>
-      <Contact></Contact>
+      <div className='main-content relative z-0'>
+        <div className='content-wrapper m-auto max-w-[1200px]'>
+          <Experience></Experience>
+          <Portfolio></Portfolio>
+          <Contact></Contact>
+        </div>
+      </div>
     </>
   )
 }

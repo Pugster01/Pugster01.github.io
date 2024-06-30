@@ -1,7 +1,7 @@
 function Hero() {
     return (
 		<>
-			<div className="w-full h-screen content-center">
+			<div className="w-full h-screen content-center relative z-0">
 				<div className="grid relative parallax">
 					<div className="text-center content-center title-and-name">
 						<h1 className="text-4xl font-bold sm:text-6xl">Ruben Puga</h1>

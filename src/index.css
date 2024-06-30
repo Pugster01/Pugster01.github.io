@@ -18,13 +18,20 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.main-content {
+  background-color: #11112b;
+}
+
 .parallax {
   height: 100%;
   min-width: 1000px;
+  z-index: 0;
   /* overflow: hidden; */
+  grid-template-areas: 'stack';
 }
 
 .parallax > * {
+  grid-area: stack;
   animation: parallax linear;
   animation-timeline: scroll();
 }
@@ -35,6 +42,7 @@
 
 .title-and-name {
   z-index: 6;
+  --parallax-speed: 50;
 }
 
 #svg-ground-1 {
@@ -46,7 +54,7 @@
 #svg-ground-2 {
   bottom: 3vw;
   z-index: 6;
-  --parallax-speed: 40;
+  --parallax-speed: 20;
 }
 
 #svg-ground-3 {
