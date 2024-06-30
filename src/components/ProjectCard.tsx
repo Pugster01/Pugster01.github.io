@@ -12,7 +12,7 @@ interface ProjectCardProps {
 function ProjectCard(props: ProjectCardProps ) {
     const [index] = useState(0)   
 
-    const mappedTech = useMemo(() => props.techStack.map(t => <img src={t} className="size-10"></img>), [])
+    const mappedTech = useMemo(() => props.techStack.map((t, index) => <img src={t} key={index} className="size-10"></img>), [])
 
     return (
         <div className={"project-card p-10 rounded-xl flex gap-10 " + (props.reverse ? "flex-row-reverse" : "flex-row")}>
