@@ -1,9 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
   line-height: 1.5;
   font-weight: 400;
 
@@ -20,6 +23,10 @@
 
 .main-content {
   background-color: #11112b;
+}
+
+.project-card {
+  background-color: rgba(255, 255, 255, 0.08);
 }
 
 .parallax {
