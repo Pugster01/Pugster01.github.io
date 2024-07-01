@@ -27,13 +27,24 @@
 
 .project-card {
   background-color: rgba(255, 255, 255, 0.08);
+  opacity: 0;
+}
+
+.animate-card {
+  animation: 0.7s ease-out slide-in forwards;
+}
+
+.project-card.flex-row {
+  --is-reverse: 1;
+}
+
+.project-card.flex-row-reverse {
+  --is-reverse: -1;
 }
 
 .parallax {
   height: 100%;
-  min-width: 1000px;
-  z-index: 0;
-  /* overflow: hidden; */
+  overflow-x: clip;
   grid-template-areas: 'stack';
 }
 
@@ -45,6 +56,8 @@
 
 .parallax > img {
   position: absolute;
+  min-width: 1000px;
+
 }
 
 .title-and-name {
@@ -124,5 +137,20 @@
 @keyframes parallax {
   to {
     transform: translateY(calc(var(--parallax-speed) * 1vh));
+  }
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(calc(var(--is-reverse) * -15vw));
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .project-card {
+    opacity: 1;
   }
 }
