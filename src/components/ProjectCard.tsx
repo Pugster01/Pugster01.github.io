@@ -10,7 +10,7 @@ interface ProjectCardProps {
 }
 
 function ProjectCard(props: ProjectCardProps) {
-    const [index] = useState(0);
+    const [index, setIndex] = useState(0);
     const [isIntersecting, setIsIntersecting] = useState(false);
     const containerRef = useRef(null)
 
@@ -50,8 +50,13 @@ function ProjectCard(props: ProjectCardProps) {
                     {mappedTech}
                 </div>
             </div>
+            {props.length > 1? (
+                <>
+                    <button onClick={() => {setIndex((((index - 1) % props.length) + props.length) % props.length); console.log(index)}} className="arrow left"></button>
+                    <button onClick={() => {setIndex((((index + 1) % props.length) + props.length) % props.length); console.log(index)}} className="arrow right"></button>
+                </>
+            ) : null}
         </div>
-        
     )
 }
 

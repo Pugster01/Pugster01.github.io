@@ -119,6 +119,29 @@
   z-index: 2;
 }
 
+.arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  height: 1rem;
+  width: 1rem;
+  position: absolute;
+  top: calc(50% - 0.5rem);
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  right: 1em;
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  left: 1em
+}
+
 @media screen and (max-width: 1000px) {
   #svg-ground-1 {
     bottom: 0;
