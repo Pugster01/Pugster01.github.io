@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
+import CardIndexIndicator from "./CardIndexIndicator";
 
 interface ProjectCardProps {
     reverse: boolean;
@@ -52,8 +53,9 @@ function ProjectCard(props: ProjectCardProps) {
             </div>
             {props.length > 1? (
                 <>
-                    <button onClick={() => {setIndex((((index - 1) % props.length) + props.length) % props.length); console.log(index)}} className="arrow left"></button>
-                    <button onClick={() => {setIndex((((index + 1) % props.length) + props.length) % props.length); console.log(index)}} className="arrow right"></button>
+                    <button onClick={() => {setIndex((((index - 1) % props.length) + props.length) % props.length)}} className="arrow left"></button>
+                    <button onClick={() => {setIndex((((index + 1) % props.length) + props.length) % props.length)}} className="arrow right"></button>
+                    <CardIndexIndicator lenght={props.length} index={index} dotClick={(i) => setIndex(i)}></CardIndexIndicator>
                 </>
             ) : null}
         </div>
