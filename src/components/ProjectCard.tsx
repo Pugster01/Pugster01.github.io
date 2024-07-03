@@ -36,17 +36,17 @@ function ProjectCard(props: ProjectCardProps) {
 
     return (
         <div 
-            className={"project-card p-10 rounded-xl flex gap-10 flex-wrap justify-center " 
+            className={"project-card p-10 rounded-xl flex gap-10 flex-wrap justify-center mb-10 " 
                 + (props.reverse ? "flex-row-reverse " : "flex-row ") 
                 + (isIntersecting ? "animate-card" : "")}
             ref={containerRef}>
-            <img src={props.images[index]} className="h-80 rounded-lg"></img>
-            <div className="content-center flex flex-col flex-auto w-64 justify-around">
+            <img src={props.images[index]} className="h-80 rounded-lg object-cover"></img>
+            <div className="content-center flex flex-col flex-auto w-64 justify-around gap-4">
                 <div>
                     <h1 className="text-2xl font-bold mb-2">{props.title}</h1>
                     <p>{props.text[index]}</p>
                 </div>
-                <div className="flex justify-end gap-3">
+                <div className="flex justify-end gap-3 flex-wrap">
                     {mappedTech}
                 </div>
             </div>
