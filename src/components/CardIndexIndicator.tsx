@@ -3,7 +3,7 @@ function CardIndexIndicator({index, lenght, dotClick} : {index: number, lenght: 
     const dots = [];
 
     for(let i = 0; i < lenght; i++) {
-        dots.push((<button onClick={() => {dotClick(i)}} className={"dot h-2 p-1 rounded transition-colors " + (i == index ? "bg-white/80":"bg-white/20")}></button>))
+        dots.push((<button key={i} onClick={() => {dotClick(i)}} className={"dot h-2 p-1 rounded transition-colors " + (i == index ? "bg-white/80":"bg-white/20")}></button>))
     }
 
     return (
