@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import Experience from './components/Experience'
 import Portfolio from './components/Portfolio'
 import Skills from './components/Skills'
+import Links from './components/Links'
 
 function App() {
   return (
@@ -13,10 +14,11 @@ function App() {
         <div className='content-wrapper m-auto max-w-[1200px] p-3'>
           <Skills></Skills>
           <Portfolio></Portfolio>
-          <Experience></Experience>
-          <Contact></Contact>
+          {/* <Experience></Experience> */}
+          {/* <Contact></Contact> */}
         </div>
       </div>
+      <Links></Links>
     </>
   )
 }
